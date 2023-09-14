@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            margin: 0;
+        }
+        body{
+            height: 1000px;
+        }
+        .navigation{
+            background: #cccccc;
+            width: 15em;
+            float: left;
+            height: 15em;
+        }
+        .article{
+            background: #aaaaaa;
+            margin-bottom: .2em;
+            margin-left: 15em;
+        }
+        .web1{
+            height: 170px;
+        }
+        .web2{
+            height: 300px;
+        }
+        .footer{
+            background: #ccc;
+            height: 35px;
+            text-align: center;
+            padding: 5px;
+        }
+        .wrap{
+            background: #dbdbdb;
+        }
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните
+                    контеном достаточным,
+                    чтобы по высоте он начинал,
+                    захватывать вторую статью,
+                    как показано в данном
+                    примере.</li>
+            </ul>
+            
+
+        </div>
+        <div class="article web1">
+            <h3>Статья 1</h3>
+            Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin- <br>
+            bottombottom 
+        </div>
+
+        <div class="article web2">
+            <h3>Статья 2</h3>
+            Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin- <br>
+            bottombottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картини. <br>
+
+            <img style="float: right; clear: both; padding-top: 80px" src="Без названия.jpg" alt="img">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
