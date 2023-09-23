@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.MenuLevel1 { width: 100%; display: flex; flex-wrap: wrap;}
+        div.MenuLevel1 > div { background-color: #d3d3d3; color: #818181; border: solid black 1px; position: relative; cursor: pointer; border-radius: 3px; width: 100px;}
+        div.MenuLevel2 { width: 100%; display: none }
+        div.MenuLevel2 > div { background-color: #d3d3d3; border: solid black 1px; cursor: pointer; border-radius: 3px; }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; top: 100%; z-index: 1 }
+        div.MenuLevel1 > div:hover {background-color: #818181; color: #d3d3d3;}
+        div.MenuLevel1 > div:hover div.MenuLevel2 {color: #818181}
+
+        @media all and (max-width: 627px){
+            div.MenuLevel1 { flex-direction: column; }
+            div.MenuLevel1 > div:hover div.MenuLevel2 {display: block; top: 90%; left: 90%; position: absolute;  top: 100%; z-index: 1}
+        }
+    </style>
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div>Понедельник</div>
+        <div>Вторник</div>                 
+        <div>
+            Среда
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Четверг</div>
+        <div>Пятница</div>
+        <div>Суббота</div>
+    
+    </div>
+</body>
+</html>
